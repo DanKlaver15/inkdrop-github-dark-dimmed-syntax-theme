@@ -62,9 +62,10 @@
   .CodeMirror .CodeMirror-linewidget img.inline-widget {
     background: rgba(0, 0, 0, 0.05);
   }
-  .CodeMirror-searching {
+  .CodeMirror-searching,
+  .cm-searching {
     // Ctrl + F results
-    background-color: @base0D;
+    background-color: fade(@base0F, 70%);
     // Selected result
     &.searching-current-match {
       background-color: @base0C;
@@ -76,12 +77,10 @@
     .cm-formatting-list.cm-variable-3 {
       color: @base0C;
     }
-
     .cm-keyword,
     .cm-formatting-list.cm-variable-2 {
       color: @base0A;
     }
-
     .cm-url,
     .cm-string,
     .cm-string-2,
